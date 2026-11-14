@@ -1,19 +1,22 @@
-name: CI 
+name: CI
+
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+
 jobs:
   lint:
-    runsf-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-        -uses: actions/checout@v4
-        -name: Проверить скрипты линтером 
-         run: shellcheck *.sh
- test:
-   runs-on: ubuntu-latest
-   steps:
-        - uses: actions/chekout@v4
-        - name: Запустить тесты
-          run: bash test.sh 
+      - uses: actions/checkout@v4
+      - name: Проверить скрипты линтером
+        run: shellcheck *.sh
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Запустить тесты
+        run: bash test.sh
