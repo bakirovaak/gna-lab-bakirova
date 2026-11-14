@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Приветсвие
-        run: echo "Привет, GitHub Actions!"
+        run: echo "Zhanyl"
       - name: 14.11.2026 13:05
         run: date
