@@ -6,5 +6,5 @@ jobs:
     steps:
       - name: Приветсвие
         run: echo "Привет, GitHub Actions!"
-      - name: Дата и время
+      - name: 14.11.2026 13:05
         run: date
